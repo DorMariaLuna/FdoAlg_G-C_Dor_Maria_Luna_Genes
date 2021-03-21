@@ -12,10 +12,16 @@
     <a href="index.html"> Pagina principal </a> | <a href="fotos.html"> fotos  </a> |<a href="videos.html"> videos</a>  | <a href="contacto.html"> contacto </a>|<a href="formularios.html"> formularios</a>
 <header> <h1>BIENVENIDO A LOS FORMULARIOS</h1></header>
 <b>NOTA:</b> por favor sea honesto al momento de le diligenciacion de este formulario
-
+<section>
+    <p>
+        <? PHP
+        print('El valor es: '.$_POST['val']) ;
+        ?>
+    </p>
+</section>
 <section>
 
-<form name="formulario" method="get" action="procesar.php"> 
+<form name="formulario" method="POST" action="procesar.php"> 
 <p>
     <label for="primer nombre"> Primer nombre:<input type="text" name="Nombres" id="primer nombre" maxlength="10"></label>
 </p>
@@ -49,6 +55,7 @@
         <option value="5">Malo</option>    
 </select>
 </p>
+
 <br>
 En el siguiete recuadro, por favor diganos que debemos mejor en el servicio le hemos brindado.
 <p><label>Texto:
