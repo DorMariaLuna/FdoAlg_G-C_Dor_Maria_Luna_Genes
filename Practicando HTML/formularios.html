@@ -23,16 +23,16 @@
 
 <form name="formulario" method="POST" action="procesar.php"> 
 <p>
-    <label for="primer nombre"> Primer nombre:<input type="text" name="Nombres" id="primer nombre" maxlength="10"></label>
+    <label for="primer nombre"> Primer nombre:<input type="text" name="Nombres" id="primer nombre" maxlength="10" autocomplete="off" required autofocus></label>
 </p>
 <p>
-    <label for="segundo nombre">Segundo nombre:<input type="text" name="segundo nombre" id="segundo nombre" maxlength="10"></label>
+    <label for="segundo nombre">Segundo nombre:<input type="text" name="segundo nombre" id="segundo nombre" maxlength="10"autocomplete="off" ></label>
 </p>
 <p>
-    <label for="primer apellido">Primer apellido:<input type="text" name="primer apellido" id="primer nombre" maxlength="10"></label>
+    <label for="primer apellido">Primer apellido:<input type="text" name="primer apellido" id="primer nombre" maxlength="10" required autocomplete="off" ></label>
 </p>
 <p>
-    <label for="segundo apellido">Segundo apellido:<input type="text" name="segundo apellido" id="segundo apellido" maxlength="10"></label>
+    <label for="segundo apellido">Segundo apellido:<input type="text" name="segundo apellido" id="segundo apellido" maxlength="10" autocomplete="off"></label>
 </p>
 <p><label for="edad">Edad:<br>
     <input type="radio" name="edad" id="edad" value="1-10" checked>1-10</label></p>
@@ -42,7 +42,7 @@
     <p><label >Fecha de nacimiento<input type="date" name="fecha" value="2021-03-20"> </label></p>
     <p><label >Cual es su color favorito<input type="color" name="micolor " value="#99BB00"> </label></p>
 
-<p><label >correo: <input type="email" name="correo"></label></p>
+<p><label >correo: <input type="email" name="correo" required></label></p>
 <p><label >telefono: <input type="tel" name="telefono"></label></p>
 <br>
 <p>
