@@ -12,13 +12,7 @@
     <a href="index.html"> Pagina principal </a> | <a href="fotos.html"> fotos  </a> |<a href="videos.html"> videos</a>  | <a href="contacto.html"> contacto </a>|<a href="formularios.html"> formularios</a>
 <header> <h1>BIENVENIDO A LOS FORMULARIOS</h1></header>
 <b>NOTA:</b> por favor sea honesto al momento de le diligenciacion de este formulario
-<section>
-    <p>
-        <? PHP
-        print('El valor es: '.$_POST['val']) ;
-        ?>
-    </p>
-</section>
+
 <section>
 
 <form name="formulario" method="POST" action="procesar.php"> 
@@ -45,6 +39,18 @@
 <p><label >correo: <input type="email" name="correo" required></label></p>
 <p><label >telefono: <input type="tel" name="telefono"></label></p>
 <br>
+¿Te resulto util lo que encontraste aqui?
+<p><label><input type="radio" name="rango"  value="Si" >Si</label></p>
+<p> <label><input type="radio" name="rango" value="No" >No</label></p>
+
+<br>
+¿Volverias a usar nuestro sitio web?
+<p><label><input type="radio" name="volverias"  value="Si" >Si</label></p>
+<p> <label><input type="radio" name="volverias" value="No" >No</label></p>
+<p><label><input type="radio" name="volverias"  value="tal vez" >Tal vez</label></p>
+<p> <label><input type="radio" name="volverias" value="Definitivamente no" >Definitivamente no</label></p>
+<br>
+
 <p>
     <label for="Listado"> Califique nuestro servicio:</label>
     <select name="Opción" id="Listado">
@@ -55,9 +61,20 @@
         <option value="5">Malo</option>    
 </select>
 </p>
-
 <br>
-En el siguiete recuadro, por favor diganos que debemos mejor en el servicio le hemos brindado.
+¿Que tan probable es que nos recomiendes a amigos o familiares?
+<p>
+    <label for="Listado"> Recomendacion con otras personas:</label>
+    <select name="Opción" id="Listado">
+        <option value="1 "> 1</option>
+        <option value="2">2</option>
+        <option value="3 ">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>    
+</select>
+</p>
+<br>
+En el siguiete recuadro, por favor diganos que debemos mejor en el servicio que le hemos brindado.
 <p><label>Texto:
     <textarea name="texto" cols="50" rows="6"></textarea></label></p>
 <br>
